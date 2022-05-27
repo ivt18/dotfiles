@@ -1,0 +1,13 @@
+map ca <Plug>(coc-codeaction)
+map cd <Plug>(coc-definition)
+map cr <Plug>(coc-references)
+map td <Plug>(coc-type-definition)
+map cR <Plug>(coc-rename)
+map cD <Plug>(coc-declaration)
+map ci <Plug>(coc-implementation)
+map cf <Plug>(coc-format)
+map cF <Plug>(coc-fix-current)
+map cA <Plug>(coc-codelens-action)
+map cn <Plug>(coc-diagnostic-next)
+map ce <Plug>(coc-diagnostic-next-error)
+map <C-d> :CocList diagnostics<CR>
