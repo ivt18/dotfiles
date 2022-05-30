@@ -34,6 +34,7 @@ Plug 'altercation/vim-colors-solarized'
 Plug 'rktjmp/lush.nvim'
 Plug 'ellisonleao/gruvbox.nvim'
 Plug 'shaunsingh/nord.nvim'
+Plug 'ackyshake/Spacegray.vim'
 
 " Fuzzy finder
 Plug 'junegunn/fzf'
@@ -60,7 +61,7 @@ call plug#end()
 " Completions configuration
 lua <<EOF
     require("nvim-lsp-installer").setup({
-        ensure_installed = { "clangd", "jdtls" }, -- ensure these servers are always installed
+        ensure_installed = { "clangd"}, -- ensure these servers are always installed
         automatic_installation = true, -- automatically detect which servers to install (based on which servers are set up via lspconfig)
         ui = {
             icons = {
@@ -144,7 +145,6 @@ lua <<EOF
     require('lspconfig')['clangd'].setup {
         capabilities = capabilities
     }
-    require('lspconfig')['jdtls'].setup{}
     
     local ARDUINO_UNO = "arduino:avr:uno"
     require('lspconfig')['arduino_language_server'].setup{

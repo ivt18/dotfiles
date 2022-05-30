@@ -42,6 +42,11 @@ set clipboard+=unnamedplus               " Copy paste between vim and everything
 "" You can't stop me
 cmap w!! w !sudo tee %
 
+" Spacegray colorscheme settings
+let g:spacegray_underline_search = 1
+let g:spacegray_use_italics = 1
+let g:spacegray_low_contrast = 1
+
 " Used colorscheme
 " set termguicolors     " enable true colors support
 " let ayucolor="mirage" " for mirage version of theme
@@ -49,8 +54,13 @@ cmap w!! w !sudo tee %
 " colorscheme ayu
 " colorscheme solarized
 " colorscheme gruvbox
-colorscheme nord
-let g:nord_contrast = v:true
+" let g:nord_contrast = v:true
+" colorscheme nord
+colorscheme spacegray
+
+" Some small modifications after the colorscheme has been set
+hi Normal ctermbg=none guibg=none
+hi NonText ctermbg=none guibg=none
 
 filetype plugin on
 
