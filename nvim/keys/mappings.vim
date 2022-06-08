@@ -60,5 +60,9 @@ nnoremap <M-v> :q!<CR>
 " For deleting prev word with backspace
 inoremap <M-BS> <C-w>
 
+" Better terminal bindings
+tnoremap <C-PageUp> <C-\><C-n><C-PageUp>
+tnoremap <C-PageDown> <C-\><C-n><C-PageUp>
+
 " For selecting the whole document
 nnoremap <C-a> ggVG
