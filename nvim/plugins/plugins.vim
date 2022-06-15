@@ -28,13 +28,14 @@ Plug 'saadparwaiz1/cmp_luasnip'
 " Lightline
 Plug 'itchyny/lightline.vim'
 
-" Themes
-Plug 'ayu-theme/ayu-vim'
-Plug 'altercation/vim-colors-solarized'
-Plug 'rktjmp/lush.nvim'
-Plug 'ellisonleao/gruvbox.nvim'
-Plug 'shaunsingh/nord.nvim'
-Plug 'ackyshake/Spacegray.vim'
+" Themes (choose as you prefer. I'm feeling gruvboxy right now)
+" Plug 'ayu-theme/ayu-vim'
+" Plug 'altercation/vim-colors-solarized'
+" Plug 'rktjmp/lush.nvim'
+" Plug 'ellisonleao/gruvbox.nvim'
+" Plug 'shaunsingh/nord.nvim'
+" Plug 'ackyshake/Spacegray.vim'
+Plug 'sainnhe/gruvbox-material'
 
 " Fuzzy finder
 Plug 'junegunn/fzf'
