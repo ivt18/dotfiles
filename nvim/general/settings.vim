@@ -42,21 +42,21 @@ set clipboard+=unnamedplus               " Copy paste between vim and everything
 "" You can't stop me
 cmap w!! w !sudo tee %
 
+" Used colorscheme
+" set termguicolors     " enable true colors support
+
 " Spacegray colorscheme settings
 let g:spacegray_underline_search = 1
 let g:spacegray_use_italics = 1
 let g:spacegray_low_contrast = 1
-
-" Used colorscheme
-" set termguicolors     " enable true colors support
-" let ayucolor="mirage" " for mirage version of theme
-" let ayucolor="dark" " for dark version of theme
-" colorscheme ayu
-" colorscheme solarized
-" colorscheme gruvbox
-" let g:nord_contrast = v:true
-" colorscheme nord
 colorscheme spacegray
+
+" Gruvbox colorscheme settings
+let g:gruvbox_material_background = 'soft'
+colorscheme gruvbox-material
+
+" Nord colorscheme settings
+" colorscheme nord
 
 " Some small modifications after the colorscheme has been set
 hi Normal ctermbg=none guibg=none
