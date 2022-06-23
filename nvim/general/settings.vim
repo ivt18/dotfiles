@@ -67,8 +67,8 @@ colorscheme everforest
 " colorscheme nord
 
 " Some small modifications after the colorscheme has been set
-hi Normal ctermbg=none guibg=none
-hi NonText ctermbg=none guibg=none
+" hi Normal ctermbg=none guibg=none
+" hi NonText ctermbg=none guibg=none
 
 filetype plugin on
 
