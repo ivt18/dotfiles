@@ -42,18 +42,26 @@ set clipboard+=unnamedplus               " Copy paste between vim and everything
 "" You can't stop me
 cmap w!! w !sudo tee %
 
-" Used colorscheme
-" set termguicolors     " enable true colors support
+" Enable true colors support
+if has ('termguicolors')
+    set termguicolors
+endif
 
 " Spacegray colorscheme settings
-let g:spacegray_underline_search = 1
-let g:spacegray_use_italics = 1
-let g:spacegray_low_contrast = 1
-colorscheme spacegray
+" let g:spacegray_underline_search = 1
+" let g:spacegray_use_italics = 1
+" let g:spacegray_low_contrast = 1
+" colorscheme spacegray
 
 " Gruvbox colorscheme settings
-let g:gruvbox_material_background = 'soft'
-colorscheme gruvbox-material
+" let g:gruvbox_material_background = 'soft'
+" colorscheme gruvbox-material
+
+" Everforest colorscheme settings
+let g:everforest_background = 'hard'
+let g:lightline = {'colorscheme' : 'everforest'}
+let g:everforest_transparent_background = 2
+colorscheme everforest
 
 " Nord colorscheme settings
 " colorscheme nord
