@@ -5,5 +5,5 @@ These are by no means incredibly original dotfiles, I just find them to be a pre
 other dotfiles.
 
 ## Dependencies 
-The necessary dotfiles for these dotfiles are the following:
+The necessary dependencies for these dotfiles are the following:
 - FzF (fuzzy finder, general purpose)
