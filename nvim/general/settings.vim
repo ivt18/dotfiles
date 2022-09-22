@@ -66,9 +66,18 @@ colorscheme everforest
 " Nord colorscheme settings
 " colorscheme nord
 
-" Some small modifications after the colorscheme has been set
-" hi Normal ctermbg=none guibg=none
-" hi NonText ctermbg=none guibg=none
+" Some small modifications after the colorscheme has been set (make the background transparent so that it blends in with the terminal)
+hi Normal ctermbg=none guibg=none
+hi NonText ctermbg=none guibg=none
+hi Normal guibg=none ctermbg=none
+hi LineNr guibg=none ctermbg=none
+hi Folded guibg=none ctermbg=none
+hi NonText guibg=none ctermbg=none
+hi SpecialKey guibg=none ctermbg=none
+hi VertSplit guibg=none ctermbg=none
+hi SignColumn guibg=none ctermbg=none
+hi EndOfBuffer guibg=none ctermbg=none
+
 
 filetype plugin on
 
