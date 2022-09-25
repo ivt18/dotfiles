@@ -1,7 +1,0 @@
-// codelens
-//"codeLens.enable": true,
-
-//autoformat
-"//coc.preferences.formatOnSaveFileTypes": [
-//    "java"
-//]
