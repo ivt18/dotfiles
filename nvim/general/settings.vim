@@ -32,14 +32,13 @@ set nowritebackup                       " This is recommended by coc
 set updatetime=300                      " Faster completion
 set timeoutlen=500                      " By default timeoutlen is 1000 ms
 set formatoptions-=cro                  " Stop newline continution of comments
-set clipboard+=unnamedplus               " Copy paste between vim and everything else
-"set autochdir                           " Your working directory will always
-"be the same as your working directory
-"
+set clipboard+=unnamedplus              " Copy paste between vim and everything else
+set autochdir                           " Your working directory will always be the same as your working directory
+
 "au! BufWritePost $MYVIMRC source %      " auto source when writing to init.vm
 "alternatively you can run :source $MYVIMRC
-"
-"" You can't stop me
+
+" You can't stop me
 cmap w!! w !sudo tee %
 
 " Enable true colors support
@@ -60,7 +59,7 @@ endif
 " Everforest colorscheme settings
 let g:everforest_background = 'hard'
 let g:lightline = {'colorscheme' : 'everforest'}
-let g:everforest_transparent_background = 2
+let g:everforest_transparent_background = 1
 colorscheme everforest
 
 " Nord colorscheme settings
@@ -77,7 +76,6 @@ hi SpecialKey guibg=none ctermbg=none
 hi VertSplit guibg=none ctermbg=none
 hi SignColumn guibg=none ctermbg=none
 hi EndOfBuffer guibg=none ctermbg=none
-
 
 filetype plugin on
 
