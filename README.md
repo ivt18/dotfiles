@@ -7,3 +7,5 @@ other dotfiles.
 ## Dependencies 
 The necessary dependencies for these dotfiles are the following:
 - FzF (fuzzy finder, general purpose)
+- NodeJS (for the Markdown preview plugin)
+- Yarn (also for the Markdown preview plugin)
