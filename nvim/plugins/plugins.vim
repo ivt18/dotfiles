@@ -53,6 +53,9 @@ Plug 'windwp/nvim-autopairs'
 Plug 'liuchengxu/vim-which-key'
 Plug 'bohlender/vim-smt2'
 
+" Markdown
+Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install' }
+
 call plug#end()
 
 " augroup jdtls_lsp
