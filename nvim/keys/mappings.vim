@@ -66,3 +66,7 @@ tnoremap <C-PageDown> <C-\><C-n><C-PageUp>
 
 " For selecting the whole document
 nnoremap <C-a> ggVG
+
+" For going through wrapped lines (shouldn't happen but just in case)
+nnoremap j gj
+nnoremap k gk
