@@ -46,12 +46,7 @@ Plug 'junegunn/fzf.vim'
 Plug 'nvim-treesitter/nvim-treesitter'
 
 " Brackets closer
-" Plug 'rstacruz/vim-closer'
 Plug 'windwp/nvim-autopairs'
-
-" Which key
-Plug 'liuchengxu/vim-which-key'
-Plug 'bohlender/vim-smt2'
 
 " LaTeX
 Plug 'lervag/vimtex'
@@ -171,16 +166,6 @@ lua <<EOF
     
     require('lspconfig')['pyright'].setup{}
     
-    local ARDUINO_UNO = "arduino:avr:uno"
-    require('lspconfig')['arduino_language_server'].setup{
-        cmd = {
-                "arduino-language-server",
-                "-cli-config", "/home/ivt/.arduino15/arduino-cli.yaml",
-                "-fqbn",
-                ARDUINO_UNO
-            }
-    }
-    
     -- nvim autopairs
     require('nvim-autopairs').setup{}
     local cmp_autopairs = require('nvim-autopairs.completion.cmp')
@@ -203,12 +188,12 @@ lua <<EOF
         file_assets         = {},                         -- Custom file asset definitions keyed by file names and extensions (see default config at `lua/presence/file_assets.lua` for reference)
 
         -- Rich Presence text options
-        editing_text        = "Editing some shitty file",               -- Format string rendered when an editable file is loaded in the buffer (either string or function(filename: string): string)
-        file_explorer_text  = "Browsing some stupid folder",              -- Format string rendered when browsing a file explorer (either string or function(file_explorer_name: string): string)
-        git_commit_text     = "Committing changes",       -- Format string rendered when committing changes in git (either string or function(filename: string): string)
-        plugin_manager_text = "Managing plugins",         -- Format string rendered when managing plugins (either string or function(plugin_manager_name: string): string)
-        reading_text        = "Reading some bullshit",               -- Format string rendered when a read-only or unmodifiable file is loaded in the buffer (either string or function(filename: string): string)
-        workspace_text      = "Working on deez nuts",            -- Format string rendered when in a git repository (either string or function(project_name: string|nil, filename: string): string)
-        line_number_text    = "Line %s out of %s",        -- Format string rendered when `enable_line_number` is set to true (either string or function(line_number: number, line_count: number): string)
+        editing_text        = "editing some shitty file",               -- Format string rendered when an editable file is loaded in the buffer (either string or function(filename: string): string)
+        file_explorer_text  = "browsing some stupid folder",              -- Format string rendered when browsing a file explorer (either string or function(file_explorer_name: string): string)
+        git_commit_text     = "committing changes",       -- Format string rendered when committing changes in git (either string or function(filename: string): string)
+        plugin_manager_text = "managing plugins",         -- Format string rendered when managing plugins (either string or function(plugin_manager_name: string): string)
+        reading_text        = "reading some bullshit",               -- Format string rendered when a read-only or unmodifiable file is loaded in the buffer (either string or function(filename: string): string)
+        workspace_text      = "working on deez nuts",            -- Format string rendered when in a git repository (either string or function(project_name: string|nil, filename: string): string)
+        line_number_text    = "line %s out of %s",        -- Format string rendered when `enable_line_number` is set to true (either string or function(line_number: number, line_count: number): string)
     })
 EOF
