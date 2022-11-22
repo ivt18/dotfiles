@@ -105,3 +105,14 @@ let g:NERDTrimTrailingWhitespace = 1
 
 " Enable NERDCommenterToggle to check all selected lines is commented or not 
 let g:NERDToggleCheckAllLines = 1
+
+" VimTeX configuration
+let g:vimtex_view_general_viewer = 'sumatraPDF'
+let g:vimtex_view_general_options = '-reuse-instance @pdf'
+autocmd BufEnter *.tex set conceallevel=0
+autocmd BufEnter *.tex LspStop
+
+" Configuration for Markdown files
+autocmd BufEnter *.md set conceallevel=0
+autocmd BufEnter *.md set wrap 
+autocmd BufEnter *.md LspStop

@@ -53,6 +53,9 @@ Plug 'windwp/nvim-autopairs'
 Plug 'liuchengxu/vim-which-key'
 Plug 'bohlender/vim-smt2'
 
+" LaTeX
+Plug 'lervag/vimtex'
+
 " Markdown
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install' }
 
@@ -124,6 +127,21 @@ lua <<EOF
         }, {
         { name = 'buffer' },
         })
+    })
+
+    -- Disable for markdown files
+    cmp.setup.filetype('markdown', {
+        enabled = false
+    })
+
+    -- Disable for vim files
+    cmp.setup.filetype('vim', {
+        enabled = false
+    })
+
+    -- Disable for tex files
+    cmp.setup.filetype('tex', {
+        enabled = false
     })
 
     -- Use buffer source for `/` (if you enabled `native_menu`, this won't work anymore).
