@@ -110,8 +110,6 @@ lua <<EOF
             { name = 'luasnip' }, -- For luasnip users.
         -- { name = 'ultisnips' }, -- For ultisnips users.
         -- { name = 'snippy' }, -- For snippy users.
-        }, {
-            { name = 'buffer' },
         })
     })
 
@@ -131,11 +129,6 @@ lua <<EOF
 
     -- Disable for vim files
     cmp.setup.filetype('vim', {
-        enabled = false
-    })
-
-    -- Disable for tex files
-    cmp.setup.filetype('tex', {
         enabled = false
     })
 
