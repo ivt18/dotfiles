@@ -110,7 +110,18 @@ let g:NERDToggleCheckAllLines = 1
 let g:vimtex_view_general_viewer = 'sumatraPDF'
 let g:vimtex_view_general_options = '-reuse-instance @pdf'
 autocmd BufEnter *.tex set conceallevel=0
+autocmd BufEnter *.tex set wrap 
 
 " Configuration for Markdown files
 autocmd BufEnter *.md set conceallevel=0
 autocmd BufEnter *.md set wrap 
+
+lua << EOF
+-- this is for diagnositcs signs on the line number column
+-- !important nerdfonts needs to be setup for this to work in your terminal
+local signs = { Error = " ", Warn = " ", Hint = " ", Info = " " } 
+for type, icon in pairs(signs) do
+    local hl = "DiagnosticSign" .. type
+    vim.fn.sign_define(hl, { text = icon, texthl= hl, numhl = hl })
+end
+EOF
