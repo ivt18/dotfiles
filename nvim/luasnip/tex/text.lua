@@ -36,78 +36,32 @@ local get_visual = function(args, parent)
 end
 
 return {
-    
-s({trig = "mm", snippetType="autosnippet", regTrig = false, wordTrig = true},
+
+s({trig = "itt", snippetType="autosnippet", regTrig = false, wordTrig = true},
     fmta(
-        "$<>$",
+        "\\textit{<>}",
         {
             d(1, get_visual),
         }
     )
 ),
 
-s({trig = 'ee', snippetType="autosnippet", regTrig = true, wordTrig = false},
+s({trig = "udd", snippetType="autosnippet", regTrig = false, wordTrig = true},
     fmta(
-        "e^{<>}",
+        "\\underline{<>}",
         {
-            i(1)
+            d(1, get_visual),
         }
-    ),
-    {condition = tex_utils.in_mathzone}
+    )
 ),
 
-s({trig = 'ff', snippetType="autosnippet", regTrig = true, wordTrig = false},
+s({trig = "bdd", snippetType="autosnippet", regTrig = false, wordTrig = true},
     fmta(
-        "\\frac{<>}{<>}",
+        "\\textbf{<>}",
         {
-            i(1),
-            i(2)
+            d(1, get_visual),
         }
-    ),
-    {condition = tex_utils.in_mathzone}
-),
-
-s({trig = 'ii', snippetType="autosnippet", regTrig = true, wordTrig = false},
-    fmta(
-        "\\int^{<>}_{<>}",
-        {
-            i(1),
-            i(2)
-        }
-    ),
-    {condition = tex_utils.in_mathzone}
-),
-
-s({trig = 'pp', snippetType="autosnippet", regTrig = true, wordTrig = false},
-    fmta(
-        "\\prod^{<>}_{<>}",
-        {
-            i(1),
-            i(2)
-        }
-    ),
-    {condition = tex_utils.in_mathzone}
-),
-
-s({trig = 'ss', snippetType="autosnippet", regTrig = true, wordTrig = false},
-    fmta(
-        "\\sum^{<>}_{<>}",
-        {
-            i(1),
-            i(2)
-        }
-    ),
-    {condition = tex_utils.in_mathzone}
-),
-
-s({trig = 'exx', snippetType="autosnippet", regTrig = true, wordTrig = false},
-    fmta(
-        "\\expec{<>}",
-        {
-            i(1),
-        }
-    ),
-    {condition = tex_utils.in_mathzone}
+    )
 ),
 
 }

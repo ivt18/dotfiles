@@ -30,7 +30,19 @@ s({trig = "h2", dscr="Sub-level section", snippetType="autosnippet"},
     {condition = line_begin}  -- set condition in the `opts` table
 ),
 
-
+s({trig = "h3", dscr="Sub-sub-level section", snippetType="autosnippet"},
+    fmta(
+        [[
+            \subsubsection{<>}
+            \label{subsec:<>}
+        ]],
+        {
+            i(1),
+            i(2)
+        }
+    ), 
+    {condition = line_begin}  -- set condition in the `opts` table
+),
 
 s({trig="new", dscr="A generic new environmennt"},
     fmta(
