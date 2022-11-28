@@ -58,6 +58,8 @@ nnoremap <C-a> ggVG
 " For navigating through wrapped lines
 nnoremap j gj
 nnoremap k gk
+vnoremap j gj
+vnoremap k gk
 
 " Expand snippets in insert mode with Tab
 imap <silent><expr> <Tab> luasnip#expandable() ? '<Plug>luasnip-expand-snippet' : '<Tab>'
