@@ -8,25 +8,16 @@ nnoremap <M-k>    :resize +2<CR>
 nnoremap <M-h>    :vertical resize -2<CR>
 nnoremap <M-l>    :vertical resize +2<CR>
 
-" " I hate escape more than anything else
+" I hate escape more than anything else
 inoremap jk <Esc>
 " inoremap kj <Esc>
 inoremap JK <Esc>
 " inoremap KJ <Esc>
-" " Easy CAPS
-inoremap <c-u> <ESC>viwUi
-nnoremap <c-u> viwU<Esc>
 
-" " TAB in general mode will move to text buffer
+" TAB in general mode will move to text buffer
 nnoremap <TAB> :bnext<CR>
 " SHIFT-TAB will go back
 nnoremap <S-TAB> :bprevious<CR>
-" Alternate way to save
-nnoremap <C-s> :w<CR>
-" Alternate way to quit
-nnoremap <C-Q> :wq!<CR>
-" Use control-c instead of escape
-nnoremap <C-c> <Esc>
 " <TAB>: completion.
 inoremap <expr><TAB> pumvisible() ? "\<C-n>" : "\<TAB>"
 
@@ -57,9 +48,6 @@ map <C-y> :noh<CR>
 map <C-v> :vsplit<CR>
 nnoremap <M-v> :q!<CR>
 
-" For deleting prev word with backspace
-inoremap <M-BS> <C-w>
-
 " Better terminal bindings
 tnoremap <C-PageUp> <C-\><C-n><C-PageUp>
 tnoremap <C-PageDown> <C-\><C-n><C-PageUp>
@@ -67,6 +55,24 @@ tnoremap <C-PageDown> <C-\><C-n><C-PageUp>
 " For selecting the whole document
 nnoremap <C-a> ggVG
 
-" For going through wrapped lines (shouldn't happen but just in case)
+" For navigating through wrapped lines
 nnoremap j gj
 nnoremap k gk
+
+" Expand snippets in insert mode with Tab
+imap <silent><expr> <Tab> luasnip#expandable() ? '<Plug>luasnip-expand-snippet' : '<Tab>'
+
+" Jump forward in through tabstops in insert and visual mode with Control-f
+imap <silent><expr> <Tab> luasnip#jumpable(1) ? '<Plug>luasnip-jump-next' : '<Tab>'
+smap <silent><expr> <Tab> luasnip#jumpable(1) ? '<Plug>luasnip-jump-next' : '<C-f>'
+
+" Jump backward through snippet tabstops with Shift-Tab
+imap <silent><expr> <S-Tab> luasnip#jumpable(-1) ? '<Plug>luasnip-jump-prev' : '<S-Tab>'
+smap <silent><expr> <S-Tab> luasnip#jumpable(-1) ? '<Plug>luasnip-jump-prev' : '<S-Tab>'
+
+" Cycle forward through choice nodes with Control-j
+imap <silent><expr> <C-j> luasnip#choice_active() ? '<Plug>luasnip-next-choice' : '<C-j>'
+smap <silent><expr> <C-j> luasnip#choice_active() ? '<Plug>luasnip-next-choice' : '<C-j>'
+
+" Update luasnip config
+nnoremap <leader>L <Cmd>lua require("luasnip.loaders.from_lua").load({paths = "~/.config/nvim/luasnip/"})<CR>
