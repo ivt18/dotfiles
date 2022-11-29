@@ -30,4 +30,22 @@ s({trig=";g", snippetType="autosnippet"},
     }
 ),
 
+s({trig=";ps", snippetType="autosnippet"},
+    {
+        t("\\psi"),
+    }
+),
+
+s({trig=";ph", snippetType="autosnippet"},
+    {
+        t("\\phi"),
+    }
+),
+
+s({trig=";t", snippetType="autosnippet"},
+    {
+        t("\\theta"),
+    }
+),
+
 }
