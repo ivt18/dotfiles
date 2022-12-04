@@ -109,11 +109,11 @@ let g:NERDToggleCheckAllLines = 1
 " VimTeX configuration
 let g:vimtex_view_general_viewer = 'sumatraPDF'
 let g:vimtex_view_general_options = '-reuse-instance @pdf'
-autocmd BufEnter *.tex set conceallevel=0
+autocmd FileType tex let g:indentLine_enabled=0
 autocmd BufEnter *.tex set wrap 
 
 " Configuration for Markdown files
-autocmd BufEnter *.md set conceallevel=0
+autocmd FileType markdown let g:indentLine_enabled=0
 autocmd BufEnter *.md set wrap 
 
 lua << EOF

@@ -46,7 +46,7 @@ s({trig = "mm", snippetType="autosnippet", regTrig = false, wordTrig = true},
     )
 ),
 
-s({trig = 'ee', snippetType="autosnippet", regTrig = true, wordTrig = false},
+s({trig = 'ee', snippetType="autosnippet", regTrig = false, wordTrig = true},
     fmta(
         "e^{<>}",
         {
@@ -56,7 +56,7 @@ s({trig = 'ee', snippetType="autosnippet", regTrig = true, wordTrig = false},
     {condition = tex_utils.in_mathzone}
 ),
 
-s({trig = 'ff', snippetType="autosnippet", regTrig = true, wordTrig = false},
+s({trig = 'ff', snippetType="autosnippet", regTrig = false, wordTrig = true},
     fmta(
         "\\frac{<>}{<>}",
         {
@@ -67,7 +67,7 @@ s({trig = 'ff', snippetType="autosnippet", regTrig = true, wordTrig = false},
     {condition = tex_utils.in_mathzone}
 ),
 
-s({trig = 'ii', snippetType="autosnippet", regTrig = true, wordTrig = false},
+s({trig = 'ii', snippetType="autosnippet", regTrig = false, wordTrig = true},
     fmta(
         "\\int^{<>}_{<>}",
         {
@@ -78,7 +78,7 @@ s({trig = 'ii', snippetType="autosnippet", regTrig = true, wordTrig = false},
     {condition = tex_utils.in_mathzone}
 ),
 
-s({trig = 'pp', snippetType="autosnippet", regTrig = true, wordTrig = false},
+s({trig = 'pp', snippetType="autosnippet", regTrig = false, wordTrig = true},
     fmta(
         "\\prod^{<>}_{<>}",
         {
@@ -89,7 +89,7 @@ s({trig = 'pp', snippetType="autosnippet", regTrig = true, wordTrig = false},
     {condition = tex_utils.in_mathzone}
 ),
 
-s({trig = 'ss', snippetType="autosnippet", regTrig = true, wordTrig = false},
+s({trig = 'ss', snippetType="autosnippet", regTrig = false, wordTrig = true},
     fmta(
         "\\sum^{<>}_{<>}",
         {
@@ -100,12 +100,30 @@ s({trig = 'ss', snippetType="autosnippet", regTrig = true, wordTrig = false},
     {condition = tex_utils.in_mathzone}
 ),
 
-s({trig = 'exx', snippetType="autosnippet", regTrig = true, wordTrig = false},
+s({trig = 'exx', snippetType="autosnippet", regTrig = false, wordTrig = true},
     fmta(
         "\\expec{<>}",
         {
             i(1),
         }
+    ),
+    {condition = tex_utils.in_mathzone}
+),
+
+s({trig = 'var', snippetType="autosnippet", regTrig = false, wordTrig = true},
+    fmta(
+        "\\var{<>}",
+        {
+            i(1),
+        }
+    ),
+    {condition = tex_utils.in_mathzone}
+),
+
+s({trig = 'app', snippetType="autosnippet", regTrig = false, wordTrig = true},
+    fmta(
+        "\\approx",
+        {}
     ),
     {condition = tex_utils.in_mathzone}
 ),
