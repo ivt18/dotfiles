@@ -7,6 +7,8 @@ local get_visual = function(args, parent)
   end
 end
 
+local line_begin = require("luasnip.extras.expand_conditions").line_begin
+
 return {
 
 s({trig = "bdd", snippetType="autosnippet", regTrig = false, wordTrig = true},
@@ -34,6 +36,30 @@ s({trig = "udd", snippetType="autosnippet", regTrig = false, wordTrig = true},
             d(1, get_visual),
         }
     )
+),
+
+s({trig = "cdd", snippetType="autosnippet", regTrig = false, wordTrig = true},
+    fmta(
+        "`<>`",
+        {
+            d(1, get_visual),
+        }
+    )
+),
+
+s({trig = "code", snippetType="autosnippet"},
+    fmta(
+        [[
+            ```<>
+            <>
+            ```
+        ]],
+        {
+            i(1),
+            i(2)
+        }
+    ),
+    {condition = line_begin}
 ),
 
 }
