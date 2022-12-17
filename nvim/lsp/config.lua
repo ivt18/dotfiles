@@ -21,9 +21,7 @@ local on_attach = function(client, bufnr)
     vim.keymap.set('n', ']d', vim.diagnostic.goto_next, opts)
 end
 
-require("nvim-lsp-installer").setup({
-    ensure_installed = { "clangd"}, -- ensure these servers are always installed
-    automatic_installation = true, -- automatically detect which servers to install (based on which servers are set up via lspconfig)
+require("mason").setup({
     ui = {
         icons = {
             server_installed = "✓",
@@ -40,7 +38,6 @@ local util = require'lspconfig.util'
 
 require'lspconfig'.clangd.setup {
     capabilities = capabilities,
-    on_attach = on_attach,
 }
 
 require'lspconfig'.jedi_language_server.setup{

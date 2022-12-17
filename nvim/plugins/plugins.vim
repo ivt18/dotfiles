@@ -9,7 +9,7 @@ Plug 'Yggdroot/indentline'
 
 " Plug 'neoclide/coc.nvim', { 'branch': 'release'}
 Plug 'neovim/nvim-lspconfig'
-Plug 'williamboman/nvim-lsp-installer'
+Plug 'williamboman/mason.nvim'
 
 " Discord Presence
 Plug 'andweeb/presence.nvim'
