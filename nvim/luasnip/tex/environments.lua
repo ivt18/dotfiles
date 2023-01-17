@@ -44,6 +44,41 @@ s({trig = "h3", dscr="Sub-sub-level section", snippetType="autosnippet"},
     {condition = line_begin}  -- set condition in the `opts` table
 ),
 
+s({trig = "chap", dscr="Chapter", snippetType="autosnippet"},
+    fmta(
+        [[
+            \chapter{<>}
+            \label{chap:<>}
+        ]],
+        {
+            i(1),
+            i(2)
+        }
+    ), 
+    {condition = line_begin}  -- set condition in the `opts` table
+),
+
+s({trig="fig", dscr="A new figure environmennt"},
+    fmta(
+        [[
+            \begin{figure}[<>]
+                \centering
+                \includegraphics[<>]{<>}
+                \caption{<>}
+                \label{fig:<>}
+            \end{figure}
+        ]],
+        {
+            i(1),
+            i(2),
+            i(3),
+            i(4),
+            i(5)
+        }
+    ),
+    {condition = line_begin}
+),
+
 s({trig="new", dscr="A generic new environmennt"},
     fmta(
         [[

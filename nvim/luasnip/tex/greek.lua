@@ -48,4 +48,10 @@ s({trig=";t", snippetType="autosnippet"},
     }
 ),
 
+s({trig=";r", snippetType="autosnippet"},
+    {
+        t("\\rho"),
+    }
+),
+
 }

@@ -48,3 +48,7 @@ require'lspconfig'.jedi_language_server.setup{
 require'lspconfig'.ltex.setup{
     capabilities = capabilities,
 }
+
+require'lspconfig'.jdtls.setup{
+    capabilities = capabilities
+}

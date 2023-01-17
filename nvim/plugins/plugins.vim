@@ -25,7 +25,7 @@ Plug 'hrsh7th/cmp-nvim-lsp'
 Plug 'L3MON4D3/LuaSnip'
 Plug 'saadparwaiz1/cmp_luasnip'
 
-" Lightline
+" Status lines 
 Plug 'itchyny/lightline.vim'
 
 " Themes (choose as you prefer. I'm feeling foresty right now)
@@ -41,6 +41,9 @@ Plug 'sainnhe/everforest'
 " Fuzzy finder
 Plug 'junegunn/fzf'
 Plug 'junegunn/fzf.vim'
+
+" Icons
+Plug 'ryanoasis/vim-devicons'
 
 " Treesitter
 Plug 'nvim-treesitter/nvim-treesitter'

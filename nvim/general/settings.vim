@@ -58,7 +58,6 @@ endif
 
 " Everforest colorscheme settings
 let g:everforest_background = 'hard'
-let g:lightline = {'colorscheme' : 'everforest'}
 let g:everforest_transparent_background = 1
 colorscheme everforest
 
@@ -107,7 +106,7 @@ let g:NERDTrimTrailingWhitespace = 1
 let g:NERDToggleCheckAllLines = 1
 
 " VimTeX configuration
-let g:vimtex_view_general_viewer = 'sumatraPDF'
+let g:vimtex_view_general_viewer = 'zathura'
 let g:vimtex_view_general_options = '-reuse-instance @pdf'
 autocmd FileType tex let g:indentLine_enabled=0
 autocmd BufEnter *.tex set wrap 
