@@ -1,5 +1,14 @@
 #! /bin/sh
 
+# configure xinput stuff
+xinput set-prop 12 300 1
+xinput set-prop 12 308 1
+
+setxkbmap -layout "us,bg" -variant ",bas_phonetic"
+nitrogen --restore
+xsetroot -cursor_name left_ptr
+picom -f
+
 pgrep -x sxhkd > /dev/null || sxhkd &
 
 if [[ $(xrandr -q | grep 'HDMI-1-0 connected') ]]; then
