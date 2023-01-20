@@ -38,6 +38,7 @@ local util = require'lspconfig.util'
 
 require'lspconfig'.clangd.setup {
     capabilities = capabilities,
+    on_attach = on_attach,
 }
 
 require'lspconfig'.jedi_language_server.setup{
@@ -50,5 +51,6 @@ require'lspconfig'.ltex.setup{
 }
 
 require'lspconfig'.jdtls.setup{
-    capabilities = capabilities
+    capabilities = capabilities,
+    on_attach = on_attach,
 }
