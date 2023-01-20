@@ -6,9 +6,11 @@ These are simply my Neovim dotfiles. I will assume that if you are interested en
 
 The necessary dependencies for these dotfiles are the following:
 
-- FzF (fuzzy finder, general purpose)
-- NodeJS (for the Markdown preview plugin)
-- Yarn (also for the Markdown preview plugin)
+- `fzf` (fuzzy finder, general purpose)
+- `nodejs` (for the Markdown preview plugin)
+- `yarn` (also for the Markdown preview plugin)
+- `xdg-utils` (also for the Markdown preview plugin)
 - TeXLive (for VimTeX)
+- `latex-mk` (also for VimTeX)
 
 And probably some others that I have missed.
