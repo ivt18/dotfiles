@@ -51,6 +51,7 @@ fi
 # configure xinput stuff
 xinput set-prop "Synaptics TM3625-010" "libinput Tapping Enabled" 1
 xinput set-prop "Synaptics TM3625-010" "libinput Natural Scrolling Enabled" 1
+xinput set-button-map "Synaptics TM3625-010" "libinput Natural Scrolling Enabled" 1 0 3 4 5 6 7
 
 setxkbmap -layout "us,bg" -variant ",bas_phonetic" &
 nitrogen --restore &
