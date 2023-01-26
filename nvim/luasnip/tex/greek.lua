@@ -48,6 +48,12 @@ s({trig=";t", snippetType="autosnippet"},
     }
 ),
 
+s({trig=";s", snippetType="autosnippet"},
+    {
+        t("\\sigma"),
+    }
+),
+
 s({trig=";r", snippetType="autosnippet"},
     {
         t("\\rho"),

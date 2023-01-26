@@ -128,4 +128,14 @@ s({trig = 'app', snippetType="autosnippet", regTrig = false, wordTrig = true},
     {condition = tex_utils.in_mathzone}
 ),
 
+s({trig = 'xtt', snippetType="autosnippet", regTrig = false, wordTrig = true},
+    fmta(
+        "\\texttt{<>}",
+        {
+            i(1)
+        }
+    ),
+    {condition = tex_utils.in_mathzone}
+),
+
 }

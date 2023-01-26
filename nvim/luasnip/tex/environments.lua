@@ -95,4 +95,18 @@ s({trig="new", dscr="A generic new environmennt"},
     {condition = line_begin}
 ),
 
+s({trig="eqq", dscr="Equation environment"},
+    fmta(
+        [[
+            \begin{equation}
+              <>
+            \end{equation}
+        ]],
+        {
+            i(1),
+        }
+    ),
+    {condition = line_begin}
+),
+
 }
