@@ -30,5 +30,5 @@ export MOZ_USE_XINPUT2=1
 # i dont like netbeans but it is what it is
 export PATH="${PATH}:/home/ivt/Programs/netbeans/bin"
 
-# i love latex
-export PATH="${PATH}:/usr/local/texlive/2022/bin/x84_64-linux"
+# aliases
+alias g='git'
