@@ -6,11 +6,12 @@ s({trig = "h1", dscr="Top-level section", snippetType="autosnippet"},
     fmta(
         [[
             \section{<>}
-            \label{sec:<>}
+            \label{<>:<>}
         ]],
         {
             i(1),
-            i(2)
+            i(2),
+            i(3)
         }
     ), 
     {condition = line_begin}  -- set condition in the `opts` table
@@ -20,11 +21,12 @@ s({trig = "h2", dscr="Sub-level section", snippetType="autosnippet"},
     fmta(
         [[
             \subsection{<>}
-            \label{subsec:<>}
+            \label{<>:<>}
         ]],
         {
             i(1),
-            i(2)
+            i(2),
+            i(3)
         }
     ), 
     {condition = line_begin}  -- set condition in the `opts` table
@@ -34,11 +36,12 @@ s({trig = "h3", dscr="Sub-sub-level section", snippetType="autosnippet"},
     fmta(
         [[
             \subsubsection{<>}
-            \label{subsec:<>}
+            \label{<>:<>}
         ]],
         {
             i(1),
-            i(2)
+            i(2),
+            i(3)
         }
     ), 
     {condition = line_begin}  -- set condition in the `opts` table

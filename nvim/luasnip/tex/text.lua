@@ -64,4 +64,22 @@ s({trig = "bdd", snippetType="autosnippet", regTrig = false, wordTrig = true},
     )
 ),
 
+s({trig = "bdd", snippetType="autosnippet", regTrig = false, wordTrig = true},
+    fmta(
+        "\\textbf{<>}",
+        {
+            d(1, get_visual),
+        }
+    )
+),
+
+s({trig = "vbb", snippetType="autosnippet", regTrig = false, wordTrig = true},
+    fmta(
+        "\\verb|<>|",
+        {
+            d(1, get_visual),
+        }
+    )
+),
+
 }
