@@ -27,8 +27,5 @@ eval "$(starship init zsh)"
 # i also like being able to swipe to go back in firefox
 export MOZ_USE_XINPUT2=1
 
-# i dont like netbeans but it is what it is
-export PATH="${PATH}:/home/ivt/Programs/netbeans/bin"
-
 # aliases
 alias g='git'
