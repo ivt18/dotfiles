@@ -49,6 +49,14 @@ require'lspconfig'.jedi_language_server.setup{
 require'lspconfig'.ltex.setup{
     capabilities = capabilities,
     on_attach = on_attach,
+    settings = {
+        ltex = {
+            disabledRules = { ['en-US'] = { 'PROFANITY' } },
+            dictionary = {
+                ['en-US'] = {'Iliyan', 'Teofilov'},
+            },
+        },
+    },
 }
 
 require'lspconfig'.jdtls.setup{

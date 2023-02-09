@@ -114,6 +114,7 @@ autocmd BufEnter *.tex set wrap
 " Configuration for Markdown files
 autocmd FileType markdown let g:indentLine_enabled=0
 autocmd BufEnter *.md set wrap 
+autocmd BufEnter *.md set conceallevel=0
 
 lua << EOF
 -- this is for diagnositcs signs on the line number column
