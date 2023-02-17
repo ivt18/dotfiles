@@ -39,6 +39,10 @@ local util = require'lspconfig.util'
 require'lspconfig'.clangd.setup {
     capabilities = capabilities,
     on_attach = on_attach,
+    cmd = {
+        "clangd",
+        "--header-insertion=never",
+    }
 }
 
 require'lspconfig'.jedi_language_server.setup{
