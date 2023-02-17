@@ -11,3 +11,4 @@ These are probably incomplete but it should include some stuff. It may also incl
 - `zsh-syntax-highlighting`
 - `ttf-jetbrains-mono-nerd`
 - `xsecurelock`
+- `scrot`
