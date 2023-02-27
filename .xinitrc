@@ -52,7 +52,6 @@ fi
 xinput set-prop "Synaptics TM3625-010" "libinput Tapping Enabled" 1
 xinput set-prop "Synaptics TM3625-010" "libinput Natural Scrolling Enabled" 1
 xinput set-button-map "Synaptics TM3625-010" 1 1 1 4 5 6 7
-
 xinput set-prop "pointer:Logitech G305" "libinput Accel Profile Enabled" 0, 1
 
 setxkbmap -layout "us,bg" -variant ",bas_phonetic" &
