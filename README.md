@@ -12,3 +12,4 @@ These are probably incomplete but it should include some stuff. It may also incl
 - `ttf-jetbrains-mono-nerd`
 - `xsecurelock`
 - `scrot`
+- `wmname`
