@@ -50,7 +50,7 @@ nnoremap <M-v> :q!<CR>
 
 " Better terminal bindings
 tnoremap <C-PageUp> <C-\><C-n><C-PageUp>
-tnoremap <C-PageDown> <C-\><C-n><C-PageUp>
+tnoremap <C-PageDown> <C-\><C-n><C-PageDown>
 
 " For selecting the whole document
 nnoremap <C-a> ggVG
