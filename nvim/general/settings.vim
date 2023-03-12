@@ -116,9 +116,6 @@ autocmd FileType markdown let g:indentLine_enabled=0
 autocmd BufEnter *.md set wrap 
 autocmd BufEnter *.md set conceallevel=0
 
-# Configuration for ProMeLa
-syn keyword promelaType typedef
-
 lua << EOF
 -- this is for diagnositcs signs on the line number column
 -- !important nerdfonts needs to be setup for this to work in your terminal
