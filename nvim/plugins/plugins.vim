@@ -8,8 +8,9 @@ Plug 'preservim/nerdcommenter'
 Plug 'Yggdroot/indentline'
 
 " Plug 'neoclide/coc.nvim', { 'branch': 'release'}
-Plug 'neovim/nvim-lspconfig'
 Plug 'williamboman/mason.nvim'
+Plug 'williamboman/mason-lspconfig.nvim'
+Plug 'neovim/nvim-lspconfig'
 
 " Discord Presence
 Plug 'andweeb/presence.nvim'
