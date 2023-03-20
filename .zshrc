@@ -16,7 +16,7 @@ bindkey -e
 
 # case insensitive completion
 autoload -Uz compinit && compinit
-zstyle :compinstall filename '/home/ivt/.zshrc'
+zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
 
 # syntax highlighting :D
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
