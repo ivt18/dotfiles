@@ -100,42 +100,4 @@ s({trig = 'ss', snippetType="autosnippet", regTrig = false, wordTrig = true},
     {condition = tex_utils.in_mathzone}
 ),
 
-s({trig = 'exx', snippetType="autosnippet", regTrig = false, wordTrig = true},
-    fmta(
-        "\\expec{<>}",
-        {
-            i(1),
-        }
-    ),
-    {condition = tex_utils.in_mathzone}
-),
-
-s({trig = 'var', snippetType="autosnippet", regTrig = false, wordTrig = true},
-    fmta(
-        "\\var{<>}",
-        {
-            i(1),
-        }
-    ),
-    {condition = tex_utils.in_mathzone}
-),
-
-s({trig = 'app', snippetType="autosnippet", regTrig = false, wordTrig = true},
-    fmta(
-        "\\approx",
-        {}
-    ),
-    {condition = tex_utils.in_mathzone}
-),
-
-s({trig = 'xtt', snippetType="autosnippet", regTrig = false, wordTrig = true},
-    fmta(
-        "\\texttt{<>}",
-        {
-            i(1)
-        }
-    ),
-    {condition = tex_utils.in_mathzone}
-),
-
 }

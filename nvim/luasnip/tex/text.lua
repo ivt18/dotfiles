@@ -73,11 +73,11 @@ s({trig = "bdd", snippetType="autosnippet", regTrig = false, wordTrig = true},
     )
 ),
 
-s({trig = "vbb", snippetType="autosnippet", regTrig = false, wordTrig = true},
+s({trig = 'xtt', snippetType="autosnippet", regTrig = false, wordTrig = true},
     fmta(
-        "\\verb|<>|",
+        "\\texttt{<>}",
         {
-            d(1, get_visual),
+            i(1)
         }
     )
 ),

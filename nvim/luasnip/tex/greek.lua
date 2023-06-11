@@ -12,6 +12,12 @@ s({trig=";b", snippetType="autosnippet"},
     }
 ),
 
+s({trig=";e", snippetType="autosnippet"},
+    {
+        t("\\varepsilon"),
+    }
+),
+
 s({trig=";m", snippetType="autosnippet"},
     {
         t("\\mu"),
