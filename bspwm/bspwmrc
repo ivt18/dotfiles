@@ -4,9 +4,17 @@ pgrep -x sxhkd > /dev/null || sxhkd &
 
 # laptop
 if [[ $(xrandr -q | grep 'eDP-1 connected') ]]; then
+    # application rules
     bspc rule -a Spotify desktop='^5'
     bspc rule -a discord desktop='^5'
+
+    # workspaces
     bspc monitor eDP-1 -d 1 2 3 4 5
+
+    # configure trackpad
+    xinput set-prop "Synaptics TM3625-010" "libinput Tapping Enabled" 1
+    xinput set-prop "Synaptics TM3625-010" "libinput Natural Scrolling Enabled" 1
+    xinput set-button-map "Synaptics TM3625-010" 1 1 1 4 5 6 7
 fi
 
 # laptop external screen
@@ -18,10 +26,17 @@ fi
 # desktop
 if [[ $(xrandr -q | grep 'DisplayPort-0 connected') ]]; then
     xrandr --output DisplayPort-0 --primary --mode 2560x1440 --rotate normal --rate 120.00
+
+    # application rules
     bspc rule -a Spotify desktop='^6'
     bspc rule -a discord desktop='^6'
+
+    # workspaces
     bspc monitor DisplayPort-0 -d 1 2 3 4 5
     bspc monitor HDMI-A-0 -d 6 7 8 9 10
+
+    # configure mouse
+    xinput set-prop "pointer:Logitech G305" "libinput Accel Profile Enabled" 0, 1
 fi
 
 $HOME/.config/polybar/launch.sh
