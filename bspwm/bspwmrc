@@ -3,12 +3,16 @@
 pgrep -x sxhkd > /dev/null || sxhkd &
 
 # laptop
-if [[ $(xrandr -q | grep 'HDMI-1-0 connected') ]]; then
-    xrandr --output eDP-1 --primary --mode 1920x1080 --rotate normal --output HDMI-1-0 --mode 1920x1080 --rotate normal --same-as eDP-1
+if [[ $(xrandr -q | grep 'eDP-1 connected') ]]; then
     bspc rule -a Spotify desktop='^5'
     bspc rule -a discord desktop='^5'
     bspc monitor eDP-1 -d 1 2 3 4 5
-    bspc monitor HDMI-1-0 -d 6 7 8 9 10
+fi
+
+# laptop external screen
+if [[ $(xrandr -q | grep 'HDMI-1-0 connected') ]]; then
+    xrandr --output eDP-1 --primary --mode 1920x1080 --rotate normal --output HDMI-1-0 --mode 1920x1080 --rotate normal --same-as eDP-1
+    # bspc monitor HDMI-1-0 -d 6 7 8 9 10
 fi
 
 # desktop
