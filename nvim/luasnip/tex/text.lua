@@ -64,20 +64,20 @@ s({trig = "bdd", snippetType="autosnippet", regTrig = false, wordTrig = true},
     )
 ),
 
-s({trig = "bdd", snippetType="autosnippet", regTrig = false, wordTrig = true},
+s({trig = 'xtt', snippetType="autosnippet", regTrig = false, wordTrig = true},
     fmta(
-        "\\textbf{<>}",
+        "\\texttt{<>}",
         {
             d(1, get_visual),
         }
     )
 ),
 
-s({trig = 'xtt', snippetType="autosnippet", regTrig = false, wordTrig = true},
+s({trig = 'phh', snippetType="autosnippet", regTrig = false, wordTrig = true},
     fmta(
-        "\\texttt{<>}",
+        "\\emph{<>}",
         {
-            i(1)
+            d(1, get_visual),
         }
     )
 ),
