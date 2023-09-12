@@ -1,0 +1,5 @@
+setxkbmap -layout "us,bg" -variant ",bas_phonetic" &
+nitrogen --restore &
+xsetroot -cursor_name left_ptr
+picom -f &
+exec bspwm
