@@ -6,10 +6,15 @@ Feel free to copy anything you see here, as it has most likely already been copi
 
 # Dependencies
 
-These are probably incomplete but it should include some stuff. It may also include things that aren't necessarily dependencies.
+These are probably incomplete, but it should include some stuff. It may also include things that aren't necessarily dependencies.
 
 - `zsh-syntax-highlighting`
 - `ttf-jetbrains-mono-nerd`
 - `xsecurelock`
 - `scrot`
 - `wmname`
+- `lightdm`
+- `lightdm-webkit2-greeter`
+- `lightdm-webkit2-theme-litarvian`
+
+Please note that `lightdm` needs to be configured properly before use; see [this](https://wiki.archlinux.org/title/LightDM).
