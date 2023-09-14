@@ -29,7 +29,7 @@ Plug 'saadparwaiz1/cmp_luasnip'
 " Status lines 
 Plug 'itchyny/lightline.vim'
 
-" Themes (choose as you prefer. I'm feeling foresty right now)
+" Themes (choose as you prefer. I'm feeling nordy right now)
 " Plug 'ayu-theme/ayu-vim'
 " Plug 'altercation/vim-colors-solarized'
 " Plug 'rktjmp/lush.nvim'
@@ -37,7 +37,8 @@ Plug 'itchyny/lightline.vim'
 " Plug 'shaunsingh/nord.nvim'
 " Plug 'ackyshake/Spacegray.vim'
 " Plug 'sainnhe/gruvbox-material'
-Plug 'sainnhe/everforest'
+" Plug 'sainnhe/everforest'
+Plug 'mhartington/oceanic-next'
 
 " Fuzzy finder
 Plug 'junegunn/fzf'

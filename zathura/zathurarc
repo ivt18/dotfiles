@@ -1,44 +1,40 @@
-set default-bg "#272e33"
-set default-fg "#d3c6aa"
+# NORD THEME
+set default-bg              "#2e3440" # nord0
+set default-fg              "#d8dee9" # nord4
+set statusbar-bg            "#2e3440" # nord0
+set statusbar-fg            "#d8dee9" # nord4
+set inputbar-bg             "#2e3440" # nord0
+set inputbar-fg             "#a3be8c" # nord14
+set completion-bg           "#2e3440" # nord0
+set completion-fg           "#d8dee9" # nord4
+set completion-group-bg     "#2e3440" # nord0
+set completion-group-fg     "#d8dee9" # nord4
+set completion-highlight-bg "#434c5e" # nord2
+set completion-highlight-fg "#d8dee9" # nord4
+set notification-bg         "#3b4252" # nord2
+set notification-fg         "#eceff4" # nord6
+set notification-error-bg   "#bf616a" # nord11
+set notification-error-fg   "#eceff4" # nord6
+set notification-warning-bg "#ebcb8b" # nord13
+set notification-warning-fg "#2e3440" # nord0
+set highlight-color         "#5e81ac" # nord10
+set highlight-active-color  "#88c0d0" # nord8
+set index-bg                "#2e3440" # nord0
+set index-fg                "#d8dee9" # nord4
+set index-active-bg         "#434c5e" # nord2
+set index-active-fg         "#d8dee9" # nord4
+set recolor-darkcolor       "#d8dee9" # nord4
+set recolor-lightcolor      "#2e3440" # nord0
+set render-loading-bg       "#2e3440" # nord0
+set render-loading-fg       "#d8dee9" # nord4
 
-set statusbar-bg "#404c51"
-set statusbar-fg "#d3c6aa"
-set statusbar-basename true
+# GENERAL SETTINGS
+set window-title-basename true
+set statusbar-home-tilde  true
+set recolor               true
+set selection-clipboard   clipboard
 
-set inputbar-bg "#2f383e"
-set inputbar-fg "#d3c6aa"
-
-set index-bg "#2f383e"
-set index-fg "#d3c6aa"
-set index-active-bg "#a7c080"
-set index-active-fg "#2b3339"
-
-set completion-bg "#2f383e"
-set completion-fg "#d3c6aa"
-set completion-group-bg "#2f383e"
-set completion-group-fg "#7fbbb3"
-set completion-highlight-bg "#a7c080"
-set completion-highlight-fg "#2b3339"
-
-set notification-bg "#2f383e"
-set notification-fg "#d3c6aa"
-set notification-error-bg "#e68183"
-set notification-error-fg "#2b3339"
-set notification-warning-bg "#e68183"
-set notification-warning-fg "#2b3339"
-
-set highlight-color "#a7c080"
-set highlight-active-color "#7fbbb3"
-set highlight-transparency 0.35
-map <A-n> set nohlsearch
-
-set recolor-lightcolor "#272e33"
-set recolor-darkcolor "#d3c6aa"
-set recolor-keephue "true"
-set recolor "true"
-
-set render-loading-bg "#2f383e"
-set render-loading-fg "#d3c6aa"
-
-set selection-clipboard clipboard
-set window-title-home-tilde true
+# LAYOUT SETTINGS
+set statusbar-h-padding 0
+set statusbar-v-padding 0
+set show-scrollbars     false

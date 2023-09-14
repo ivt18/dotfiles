@@ -1,4 +1,4 @@
-let g:lightline = { 'colorscheme' : 'everforest' }
+let g:lightline = { 'colorscheme' : 'nord' }
 " let g:lightline.separator = { 'left': "\ue0b8", 'right': "\ue0be" }
 " let g:lightline.subseparator = { 'left': "\ue0b9", 'right': "\ue0b9" }
 " let g:lightline.tabline_separator = { 'left': "\ue0bc", 'right': "\ue0ba" }
