@@ -180,3 +180,16 @@ shift + Print
 ctrl + Print
     scrot --focused 'screenshot_%Y%m%d_%H%M%S.png' -e 'mkdir -p ~/Pictures/Screenshots && mv $f ~/Pictures/Screenshots && xclip -selection clipboard -t image/png -i ~/Pictures/Screenshots/`ls -1 -t ~/Pictures/Screenshots | head -1`'
 
+
+#
+# spotify playback control
+#
+
+XF86AudioPrev
+    playerctl --player=spotify previous
+
+XF86AudioPlay
+    playerctl --player=spotify play-pause
+
+XF86AudioNext
+    playerctl --player=spotify next
