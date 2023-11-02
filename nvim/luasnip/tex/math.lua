@@ -69,7 +69,7 @@ s({trig = 'ff', snippetType="autosnippet", regTrig = false, wordTrig = true},
 
 s({trig = 'ii', snippetType="autosnippet", regTrig = false, wordTrig = true},
     fmta(
-        "\\int^{<>}_{<>}",
+        "\\int_{<>}^{<>}",
         {
             i(1),
             i(2)
@@ -80,7 +80,7 @@ s({trig = 'ii', snippetType="autosnippet", regTrig = false, wordTrig = true},
 
 s({trig = 'pp', snippetType="autosnippet", regTrig = false, wordTrig = true},
     fmta(
-        "\\prod^{<>}_{<>}",
+        "\\prod_{<>}^{<>}",
         {
             i(1),
             i(2)
@@ -91,7 +91,7 @@ s({trig = 'pp', snippetType="autosnippet", regTrig = false, wordTrig = true},
 
 s({trig = 'ss', snippetType="autosnippet", regTrig = false, wordTrig = true},
     fmta(
-        "\\sum^{<>}_{<>}",
+        "\\sum_{<>}^{<>}",
         {
             i(1),
             i(2)
