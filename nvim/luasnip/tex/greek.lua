@@ -66,4 +66,16 @@ s({trig=";r", snippetType="autosnippet"},
     }
 ),
 
+s({trig=";o", snippetType="autosnippet"},
+    {
+        t("\\omega"),
+    }
+),
+
+s({trig=";O", snippetType="autosnippet"},
+    {
+        t("\\Omega"),
+    }
+),
+
 }
