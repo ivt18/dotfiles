@@ -16,5 +16,6 @@ These are probably incomplete, but it should include some stuff. It may also inc
 - `lightdm`
 - `lightdm-webkit2-greeter`
 - `lightdm-webkit2-theme-litarvian`
+- `pavucontrol`
 
 Please note that `lightdm` needs to be configured properly before use; see [this](https://wiki.archlinux.org/title/LightDM).
