@@ -37,8 +37,8 @@ Plug 'itchyny/lightline.vim'
 " Plug 'shaunsingh/nord.nvim'
 " Plug 'ackyshake/Spacegray.vim'
 " Plug 'sainnhe/gruvbox-material'
-" Plug 'sainnhe/everforest'
-Plug 'mhartington/oceanic-next'
+Plug 'sainnhe/everforest'
+" Plug 'mhartington/oceanic-next'
 
 " Fuzzy finder
 Plug 'junegunn/fzf'

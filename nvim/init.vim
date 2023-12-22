@@ -10,6 +10,4 @@ source $HOME/.config/nvim/lightline/lightline.vim
 source $HOME/.config/nvim/general/settings.vim
 source $HOME/.config/nvim/keys/mappings.vim
 
-" luafile $HOME/.config/nvim/feline/feline.lua
-
 lua require("luasnip.loaders.from_lua").lazy_load({paths = "~/.config/nvim/luasnip/"})

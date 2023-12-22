@@ -57,9 +57,9 @@ endif
 " colorscheme gruvbox-material
 
 " Everforest colorscheme settings
-" let g:everforest_background = 'hard'
-" let g:everforest_transparent_background = 1
-" colorscheme everforest
+let g:everforest_background = 'medium'
+let g:everforest_transparent_background = 1
+colorscheme everforest
 
 " Nord colorscheme settings
 " let g:nord_italic = v:true
@@ -67,9 +67,9 @@ endif
 " colorscheme nord
 
 " OceanicNext colorscheme settings
-let g:oceanic_next_terminal_bold = 1
-let g:oceanic_next_terminal_italic = 1
-colorscheme OceanicNext
+" let g:oceanic_next_terminal_bold = 1
+" let g:oceanic_next_terminal_italic = 1
+" colorscheme OceanicNext
 
 " Some small modifications after the colorscheme has been set (make the background transparent so that it blends in with the terminal)
 hi Normal ctermbg=none guibg=none
