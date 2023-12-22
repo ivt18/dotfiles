@@ -30,7 +30,11 @@ require("mason").setup({
     }
 })
 
-require("mason-lspconfig").setup()
+require("mason-lspconfig").setup({
+    ensure_installed = {
+        "clangd", "jdtls", "ltex", "pyright",
+    },
+})
 
 -- Setup lspconfig.
 local capabilities = require('cmp_nvim_lsp').default_capabilities(vim.lsp.protocol.make_client_capabilities())
@@ -50,11 +54,6 @@ require'lspconfig'.clangd.setup {
     }
 }
 
-require'lspconfig'.jedi_language_server.setup{
-    capabilities = capabilities,
-    on_attach = on_attach,
-}
-
 require'lspconfig'.ltex.setup{
     capabilities = capabilities,
     on_attach = on_attach,
@@ -71,4 +70,10 @@ require'lspconfig'.ltex.setup{
 require'lspconfig'.jdtls.setup{
     capabilities = capabilities,
     on_attach = on_attach,
+}
+
+require'lspconfig'.pyright.setup{
+    capabilities = capabilities,
+    on_attach = on_attach,
+    filetypes = {"python"},
 }
