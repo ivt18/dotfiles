@@ -2,7 +2,6 @@ call plug#begin('~/.config/nvim/autoload/plugged')
 
 " Nerdtree
 Plug 'preservim/nerdtree'
-Plug 'preservim/nerdcommenter'
 
 " Indent line
 Plug 'Yggdroot/indentline'
@@ -14,6 +13,9 @@ Plug 'neovim/nvim-lspconfig'
 
 " Discord Presence
 Plug 'andweeb/presence.nvim'
+
+" Comments
+Plug 'numToStr/Comment.nvim'
 
 " Completions
 Plug 'hrsh7th/nvim-cmp'

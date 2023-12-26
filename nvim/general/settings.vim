@@ -132,6 +132,9 @@ for type, icon in pairs(signs) do
     vim.fn.sign_define(hl, { text = icon, texthl= hl, numhl = hl })
 end
 
+-- Comments
+require('Comment').setup()
+
 -- Jupyter notebooks
 require("jupytext").setup({style = "hydrogen"})
 require("notebook-navigator").setup()
