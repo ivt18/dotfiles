@@ -80,3 +80,9 @@ smap <silent><expr> <C-j> luasnip#choice_active() ? '<Plug>luasnip-next-choice' 
 
 " Update luasnip config
 nnoremap <leader>L <Cmd>lua require("luasnip.loaders.from_lua").load({paths = "~/.config/nvim/luasnip/"})<CR>
+
+" Jupyter notebooks
+nmap ]h <Cmd>lua require("notebook-navigator").move_cell("d")<CR>
+nmap [h <Cmd>lua require("notebook-navigator").move_cell("u")<CR>
+nmap <leader>x <Cmd>lua require('notebook-navigator').run_cell()<CR>
+nmap <leader>X <Cmd>lua require('notebook-navigator').run_all_cells()<CR>

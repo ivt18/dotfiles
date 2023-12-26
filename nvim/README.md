@@ -13,5 +13,6 @@ The necessary dependencies for these dotfiles are the following:
 - `texlive` (for VimTeX)
 - `latex-mk` (also for VimTeX)
 - `xclip` (so that the clipboard functions properly)
+- `jupytext` (for Jupyter notebooks)
 
 And probably some others that I have missed.

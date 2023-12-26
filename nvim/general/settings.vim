@@ -125,10 +125,14 @@ autocmd BufEnter *.md set conceallevel=0
 
 lua << EOF
 -- this is for diagnositcs signs on the line number column
--- !important nerdfonts needs to be setup for this to work in your terminal
+-- nerdfonts needs to be setup for this to work in your terminal
 local signs = { Error = " ", Warn = " ", Hint = " ", Info = " " } 
 for type, icon in pairs(signs) do
     local hl = "DiagnosticSign" .. type
     vim.fn.sign_define(hl, { text = icon, texthl= hl, numhl = hl })
 end
+
+-- Jupyter notebooks
+require("jupytext").setup({style = "hydrogen"})
+require("notebook-navigator").setup()
 EOF

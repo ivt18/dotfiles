@@ -59,4 +59,10 @@ Plug 'lervag/vimtex'
 " Markdown
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install' }
 
+" Jupyter notebooks
+Plug 'hkupty/iron.nvim'
+Plug 'anuvyklack/hydra.nvim'
+Plug 'GCBallesteros/jupytext.nvim'
+Plug 'GCBallesteros/NotebookNavigator.nvim'
+
 call plug#end()
