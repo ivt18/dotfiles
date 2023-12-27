@@ -86,3 +86,6 @@ nmap ]h <Cmd>lua require("notebook-navigator").move_cell("d")<CR>
 nmap [h <Cmd>lua require("notebook-navigator").move_cell("u")<CR>
 nmap <leader>x <Cmd>lua require('notebook-navigator').run_cell()<CR>
 nmap <leader>X <Cmd>lua require('notebook-navigator').run_all_cells()<CR>
+nmap <leader>o <Cmd>lua require('notebook-navigator').add_cell_below()<CR>
+nmap <leader>O <Cmd>lua require('notebook-navigator').add_cell_above()<CR>
+nmap <leader>c <Cmd>lua require('notebook-navigator').comment_cell()<CR>
