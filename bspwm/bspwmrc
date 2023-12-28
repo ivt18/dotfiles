@@ -37,5 +37,6 @@ bspc config gapless_monocle      true
 
 bspc rule -a Firefox desktop='^2'
 bspc rule -a Zathura state=tiled
+bspc rule -a Matplotlib state=floating
 
 wmname LG3D
