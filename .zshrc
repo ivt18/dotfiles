@@ -27,5 +27,9 @@ eval "$(starship init zsh)"
 # i also like being able to swipe to go back in firefox
 export MOZ_USE_XINPUT2=1
 
+# i like neovim
+export EDITOR=nvim
+
 # aliases
 alias g='git'
+alias vim='nvim'
