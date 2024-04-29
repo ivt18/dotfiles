@@ -67,4 +67,7 @@ Plug 'anuvyklack/hydra.nvim'
 Plug 'GCBallesteros/jupytext.nvim'
 Plug 'GCBallesteros/NotebookNavigator.nvim'
 
+" Rooter
+Plug 'airblade/vim-rooter'
+
 call plug#end()
