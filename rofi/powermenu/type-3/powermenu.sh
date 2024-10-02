@@ -94,6 +94,8 @@ case ${chosen} in
 			betterlockscreen -l
 		elif [[ -x '/usr/bin/i3lock' ]]; then
 			i3lock
+        elif [[ -x '/usr/bin/xsecurelock' ]]; then
+            export XSECURELOCK_COMPOSITE_OBSCURER=0 && xsecurelock
 		fi
         ;;
     $suspend)
