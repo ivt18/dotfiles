@@ -1,0 +1,16 @@
+/**
+ *
+ * Author : Iliyan Teofilov (ivt18)
+ * Github : @ivt18
+ * 
+ * Colors
+ **/
+
+* {
+    background:     #1a2133;
+    background-alt: #263f57;
+    foreground:     #d7dde9;
+    selected:       #f99056;
+    active:         #669acc;
+    urgent:         #ef5e64;
+}

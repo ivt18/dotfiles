@@ -77,15 +77,3 @@ require'lspconfig'.pyright.setup{
     on_attach = on_attach,
     filetypes = {"python"},
 }
-
-require'lspconfig'.sqlls.setup{
-    capabilities = capabilities,
-    on_attach = on_attach,
-    cmd = { "sql-language-server", "up", "--method", "stdio" },
-    filetypes = { "sql", "mysql" },
-    root_dir = function(pattern)
-        local cwd = vim.loop.cwd()
-        local root = util.root_pattern('.git')(pattern)
-        return util.path.is_descendant(cwd, root) and cwd or root
-    end,
-}

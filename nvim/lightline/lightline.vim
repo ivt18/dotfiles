@@ -1,8 +1,11 @@
-let g:lightline = { 'colorscheme' : 'everforest' }
+" let g:lightline = { 'colorscheme' : 'everforest' }
+let g:lightline = { 'colorscheme' : 'oceanicnext' }
+
 " let g:lightline.separator = { 'left': "\ue0b8", 'right': "\ue0be" }
 " let g:lightline.subseparator = { 'left': "\ue0b9", 'right': "\ue0b9" }
 " let g:lightline.tabline_separator = { 'left': "\ue0bc", 'right': "\ue0ba" }
 " let g:lightline.tabline_subseparator = { 'left': "\ue0bb", 'right': "\ue0bb" }
+
 let g:lightline.active = {
     \ 'left': [ [ 'mode', 'paste' ],
     \           [ 'readonly', 'filename', 'modified', 'devicons_fileformat', 'devicons_filetype' ] ],
@@ -36,6 +39,11 @@ let g:lightline.component_function = {
     \ 'devicons_filetype': 'GetFiletype',
     \ 'devicons_fileformat': 'GetFileformat'
     \ }
+
+let s:palette = g:lightline#colorscheme#{g:lightline.colorscheme}#palette
+let s:palette.normal.middle = [ [ 'NONE', 'NONE', 'NONE', 'NONE' ] ]
+let s:palette.inactive.middle = s:palette.normal.middle
+let s:palette.tabline.middle = s:palette.normal.middle
 
 function! GetFileformat()
     return winwidth(0) > 70 ? (&fileformat . ' ' . WebDevIconsGetFileFormatSymbol()) : ''

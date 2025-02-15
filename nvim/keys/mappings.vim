@@ -44,10 +44,6 @@ map <M-p> :Rg<CR>
 " For highlights
 map <C-y> :noh<CR>
 
-" For splitting
-map <C-v> :vsplit<CR>
-nnoremap <M-v> :q!<CR>
-
 " Better terminal bindings
 tnoremap <C-PageUp> <C-\><C-n><C-PageUp>
 tnoremap <C-PageDown> <C-\><C-n><C-PageDown>
@@ -82,10 +78,10 @@ smap <silent><expr> <C-j> luasnip#choice_active() ? '<Plug>luasnip-next-choice' 
 nnoremap <leader>L <Cmd>lua require("luasnip.loaders.from_lua").load({paths = "~/.config/nvim/luasnip/"})<CR>
 
 " Jupyter notebooks
-nmap ]h <Cmd>lua require("notebook-navigator").move_cell("d")<CR>
-nmap [h <Cmd>lua require("notebook-navigator").move_cell("u")<CR>
-nmap <leader>x <Cmd>lua require('notebook-navigator').run_cell()<CR>
-nmap <leader>X <Cmd>lua require('notebook-navigator').run_all_cells()<CR>
-nmap <leader>o <Cmd>lua require('notebook-navigator').add_cell_below()<CR>
-nmap <leader>O <Cmd>lua require('notebook-navigator').add_cell_above()<CR>
-nmap <leader>c <Cmd>lua require('notebook-navigator').comment_cell()<CR>
+" nmap ]h <Cmd>lua require("notebook-navigator").move_cell("d")<CR>
+" nmap [h <Cmd>lua require("notebook-navigator").move_cell("u")<CR>
+" nmap <leader>x <Cmd>lua require('notebook-navigator').run_cell()<CR>
+" nmap <leader>X <Cmd>lua require('notebook-navigator').run_all_cells()<CR>
+" nmap <leader>o <Cmd>lua require('notebook-navigator').add_cell_below()<CR>
+" nmap <leader>O <Cmd>lua require('notebook-navigator').add_cell_above()<CR>
+" nmap <leader>c <Cmd>lua require('notebook-navigator').comment_cell()<CR>

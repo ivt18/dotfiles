@@ -57,9 +57,9 @@ endif
 " colorscheme gruvbox-material
 
 " Everforest colorscheme settings
-let g:everforest_background = 'medium'
-let g:everforest_transparent_background = 1
-colorscheme everforest
+" let g:everforest_background = 'medium'
+" let g:everforest_transparent_background = 1
+" colorscheme everforest
 
 " Nord colorscheme settings
 " let g:nord_italic = v:true
@@ -67,21 +67,30 @@ colorscheme everforest
 " colorscheme nord
 
 " OceanicNext colorscheme settings
-" let g:oceanic_next_terminal_bold = 1
-" let g:oceanic_next_terminal_italic = 1
-" colorscheme OceanicNext
+let g:oceanic_next_terminal_bold = 1
+let g:oceanic_next_terminal_italic = 1
+colorscheme OceanicNext
 
-" Some small modifications after the colorscheme has been set (make the background transparent so that it blends in with the terminal)
-hi Normal ctermbg=none guibg=none
-hi NonText ctermbg=none guibg=none
-hi Normal guibg=none ctermbg=none
-hi LineNr guibg=none ctermbg=none
-hi Folded guibg=none ctermbg=none
-hi NonText guibg=none ctermbg=none
-hi SpecialKey guibg=none ctermbg=none
-hi VertSplit guibg=none ctermbg=none
-hi SignColumn guibg=none ctermbg=none
-hi EndOfBuffer guibg=none ctermbg=none
+" Make the background transparent so that it blends in with the terminal
+highlight Normal ctermbg=none guibg=none
+highlight NonText ctermbg=none guibg=none
+highlight Normal guibg=none ctermbg=none
+highlight LineNr guibg=none ctermbg=none
+highlight Folded guibg=none ctermbg=none
+highlight NonText guibg=none ctermbg=none
+highlight SpecialKey guibg=none ctermbg=none
+highlight VertSplit guibg=none ctermbg=none
+highlight SignColumn guibg=none ctermbg=none
+highlight EndOfBuffer guibg=none ctermbg=none
+
+" Make current line transparent
+autocmd VimEnter * highlight CursorLine guibg=none ctermbg=none
+
+" Make the number on the sidebar get highlighted
+autocmd VimEnter * highlight CursorLineNr guibg=None ctermbg=none ctermfg=White guifg=White cterm=bold gui=bold
+
+" Transparent line number bar
+highlight LineNr guibg=none
 
 filetype plugin on
 
@@ -136,6 +145,6 @@ end
 require('Comment').setup()
 
 -- Jupyter notebooks
-require("jupytext").setup({style = "hydrogen"})
-require("notebook-navigator").setup()
+-- require("jupytext").setup({style = "hydrogen"})
+-- require("notebook-navigator").setup()
 EOF

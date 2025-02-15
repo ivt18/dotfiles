@@ -31,7 +31,7 @@ Plug 'saadparwaiz1/cmp_luasnip'
 " Status lines 
 Plug 'itchyny/lightline.vim'
 
-" Themes (choose as you prefer. I'm feeling nordy right now)
+" Themes (choose 1)
 " Plug 'ayu-theme/ayu-vim'
 " Plug 'altercation/vim-colors-solarized'
 " Plug 'rktjmp/lush.nvim'
@@ -39,8 +39,8 @@ Plug 'itchyny/lightline.vim'
 " Plug 'shaunsingh/nord.nvim'
 " Plug 'ackyshake/Spacegray.vim'
 " Plug 'sainnhe/gruvbox-material'
-Plug 'sainnhe/everforest'
-" Plug 'mhartington/oceanic-next'
+" Plug 'sainnhe/everforest'
+Plug 'mhartington/oceanic-next'
 
 " Fuzzy finder
 Plug 'junegunn/fzf'
@@ -62,10 +62,10 @@ Plug 'lervag/vimtex'
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install' }
 
 " Jupyter notebooks
-Plug 'hkupty/iron.nvim'
-Plug 'anuvyklack/hydra.nvim'
-Plug 'GCBallesteros/jupytext.nvim'
-Plug 'GCBallesteros/NotebookNavigator.nvim'
+" Plug 'hkupty/iron.nvim'
+" Plug 'anuvyklack/hydra.nvim'
+" Plug 'GCBallesteros/jupytext.nvim'
+" Plug 'GCBallesteros/NotebookNavigator.nvim'
 
 " Rooter
 Plug 'airblade/vim-rooter'
