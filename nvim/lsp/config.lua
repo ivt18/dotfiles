@@ -39,9 +39,7 @@ require("mason-lspconfig").setup({
 -- Setup lspconfig.
 local capabilities = require('cmp_nvim_lsp').default_capabilities(vim.lsp.protocol.make_client_capabilities())
 
-local util = require'lspconfig.util'
-
-require'lspconfig'.clangd.setup {
+vim.lsp.config('clangd', {
     capabilities = capabilities,
     on_attach = on_attach,
     cmd = {
@@ -52,9 +50,9 @@ require'lspconfig'.clangd.setup {
         "c",
         "cpp"
     }
-}
+})
 
-require'lspconfig'.ltex.setup{
+vim.lsp.config('ltex', {
     capabilities = capabilities,
     on_attach = on_attach,
     settings = {
@@ -65,15 +63,15 @@ require'lspconfig'.ltex.setup{
             },
         },
     },
-}
+})
 
-require'lspconfig'.jdtls.setup{
+vim.lsp.config('jdtls', {
     capabilities = capabilities,
     on_attach = on_attach,
-}
+})
 
-require'lspconfig'.pyright.setup{
+vim.lsp.config('pyright', {
     capabilities = capabilities,
     on_attach = on_attach,
     filetypes = {"python"},
-}
+})

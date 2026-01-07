@@ -5,7 +5,7 @@
 --  },
 --}
 
-require'nvim-treesitter.configs'.setup {
+require'nvim-treesitter'.setup {
   highlight = {
     enable = true,
     -- Disable for tex files, as it may cause bugs
