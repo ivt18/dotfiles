@@ -28,9 +28,8 @@ set notification-error-fg "#2b3339"
 set notification-warning-bg "#e68183"
 set notification-warning-fg "#2b3339"
 
-set highlight-color "#a7c080"
+set highlight-color "rgba(167, 192, 128, 0.35)"
 set highlight-active-color "#7fbbb3"
-set highlight-transparency 0.35
 map <A-n> set nohlsearch
 
 set recolor-lightcolor "#272e33"
