@@ -34,11 +34,11 @@ super + colon
 
 # Increase Brightness
 XF86MonBrightnessUp
-    echo $(( $(cat /sys/class/backlight/intel_backlight/brightness) + $(cat /sys/class/backlight/intel_backlight/max_brightness) * 2 / 100 )) | tee /sys/class/backlight/intel_backlight/brightness
+    brightnessctl set 2%+
 
 # Decrease Brightness
 XF86MonBrightnessDown
-    echo $(( $(cat /sys/class/backlight/intel_backlight/brightness) - $(cat /sys/class/backlight/intel_backlight/max_brightness) * 2 / 100 )) | tee /sys/class/backlight/intel_backlight/brightness
+    brightnessctl set 2%-
 
 #
 # bspwm hotkeys
