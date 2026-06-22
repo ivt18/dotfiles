@@ -4,9 +4,6 @@ pgrep -x sxhkd > /dev/null || sxhkd &
 
 # laptop
 if [[ $(xrandr -q | grep 'eDP-1 connected') ]]; then
-    # application rules (Removed the '^' to target names instead of indices)
-    bspc rule -a Spotify desktop=7 focus=off
-    bspc rule -a discord desktop=8 focus=off
 
     # workspaces
     bspc monitor eDP-1 -d 1 2 3 4 5 6 7 8
@@ -39,7 +36,9 @@ bspc config split_ratio          0.52
 bspc config borderless_monocle   true
 bspc config gapless_monocle      true
 
-bspc rule -a firefox desktop=2
+bspc rule -a firefox desktop=6
+bspc rule -a Spotify desktop=7 focus=off
+bspc rule -a discord desktop=8 focus=off
 bspc rule -a Zathura state=tiled
 bspc rule -a Matplotlib state=floating
 
